@@ -52,5 +52,7 @@ class SI7021(object):
         time.sleep(1.0)
         # TODO How to read 16 bytes without referencing a register???
         humRaw1 = self._device.readRaw8()
-        humRaw2 = self._device.readRaw8()
-        print hex(humRaw1) + " " + hex(humRaw2)
+        #humRaw2 = self._device.readRaw8()
+        humRaw = humRaw1
+        humidity  = 125 * humRaw / 65536 - 6
+        return humidity
