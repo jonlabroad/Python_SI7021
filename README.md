@@ -1,10 +1,9 @@
-Adafruit Python SI7021
+Python SI7021
 =======================
 
-Python library for accessing the SI7021 precision temperature sensor on a Raspberry Pi or Beaglebone Black.
+Python library for accessing the SI7021 precision temperature sensor on a Raspberry Pi.
 
-To install, first make sure some dependencies are available by running the following commands (on a Raspbian
-or Beaglebone Black Debian install):
+To install, first make sure some dependencies are available by running the following commands:
 
 ````
 sudo apt-get update
