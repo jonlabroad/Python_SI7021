@@ -29,9 +29,9 @@ class SI7021(object):
         """Initialize SI7021 device on the specified I2C address and bus number.
         """
         self._logger = logging.getLogger('SI7021.SI7021')
-        #if i2c is None:
-            #import Adafruit_GPIO.I2C as I2C
-            #i2c = I2C
+        if i2c is None:
+            import Adafruit_GPIO.I2C as I2C
+            i2c = I2C
         self._device = i2c.get_i2c_device(address, **kwargs)
 
     def readTempC(self):
