@@ -1,6 +1,6 @@
 import logging
 import math
-
+import time
 
 # Default I2C address for device.
 SI7021_I2CADDR_DEFAULT        = 0x40
