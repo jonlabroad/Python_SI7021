@@ -24,7 +24,7 @@ sensor = SI7021.SI7021()
 #sensor = SI7021.SI7021(address=0x20, busnum=2)
 
 # Initialize communication with the sensor.
-sensor.begin()
+#sensor.begin()
 
 # Loop printing measurements every second.
 print('Press Ctrl-C to quit.')

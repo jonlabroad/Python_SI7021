@@ -34,12 +34,6 @@ class SI7021(object):
             i2c = I2C
         self._device = i2c.get_i2c_device(address, **kwargs)
 
-    def begin(self):
-        """Start taking temperature measurements. Returns True if the device is
-        intialized, False otherwise.
-        """
-		# TODO, defaults might be fine anyhow
-
 	def readTempC(self):
 		"""Read sensor and return its value in degrees celsius."""
 		# Initiate a temperature read
