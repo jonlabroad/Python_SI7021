@@ -54,6 +54,6 @@ class SI7021(object):
         humRaw1 = self._device.readRaw8()
         print hex(humRaw1)
         #humRaw2 = self._device.readRaw8()
-        humRaw = humRaw1
+        humRaw = humRaw1 << 8
         humidity  = 125 * humRaw / 65536 - 6
         return humidity
